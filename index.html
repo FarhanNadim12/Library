@@ -13,12 +13,17 @@
 
 <body>
     <!-- Search Box -->
+    <div class="input-group mb-3 w-50 m-auto mt-5">
+        <input id="searchField" type="text" class="form-control w-75" placeholder="Search Your Book"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button id="searchBtn" onclick="searchButton()" class="btn btn-success" type="button">Search</button>
+    </div>
 
-    <div class="m-auto mt-5  w-50 ">
+    <!-- <div class="m-auto mt-5  w-50 ">
 
         <input id="searchField" height="50px" class="w-75 " type="text" placeholder="Search Book">
         <button id="searchBtn" onclick="searchButton()" class="btn btn-success mb-2">Search</button>
-    </div>
+    </div> -->
     <!--  -->
     <div class="w-25 m-auto m-5">
         <h3 class="text-align-center m-auto" id="results"></h3>

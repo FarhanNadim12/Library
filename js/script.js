@@ -18,7 +18,12 @@ const getBooks = (data) => {
     const sliceBooksDetails = booksDetails.slice(0, 35);
     //console.log(slice)
     const totalSearchResult = data.numFound;
-    document.getElementById("results").innerText = `${totalSearchResult} results Found`
+    if (totalSearchResult > 0) {
+        document.getElementById("results").innerText = `${totalSearchResult} results Found`
+    } else {
+        document.getElementById("results").innerText = `sorry! No Results Found`;
+    }
+
 
     sliceBooksDetails.forEach(bookDetail => {
         console.log(bookDetail);
